@@ -13,9 +13,10 @@ Establish what the software must do before an agent chooses how to implement it.
 1. Read the available request, issue, specification, and relevant project context.
 2. Separate explicit requirements from assumptions and inferred details.
 3. Identify ambiguities, conflicting rules, missing failure behavior, boundary conditions, and relevant security or data-integrity concerns.
-4. Ask the human only the questions whose answers materially affect expected behavior. Group related questions; do not ask about implementation details unless they affect behavior.
-5. Suggest relevant edge cases and negative scenarios. Clearly label suggestions that need a business decision.
-6. Produce a concise behavior specification with:
+4. Ask the human for clarifications before drafting or saving the specification. Focus questions on answers that materially affect expected behavior. Group related questions; do not ask about implementation details unless they affect behavior. If no material questions remain, summarize the understood scope and assumptions and ask the human to confirm or correct them.
+5. Suggest relevant edge cases and negative scenarios alongside the clarification questions. Clearly label suggestions that need a business decision.
+6. Wait for the human's response. Resolve material ambiguities through follow-up questions as needed; silence is not confirmation. Proceed only after the human has answered the clarification questions or confirmed the summarized understanding.
+7. Produce a concise behavior specification with:
    - Goal and scope
    - Actors and preconditions
    - Main success paths
@@ -24,7 +25,7 @@ Establish what the software must do before an agent chooses how to implement it.
    - Boundary and edge cases
    - Acceptance criteria stated as observable outcomes
    - Explicit assumptions and out-of-scope items
-7. Save the specification as `{feature-title}-spec.md` in the feature's agreed documentation location. Use a short, filesystem-safe feature title (lowercase kebab-case); do not overwrite an existing specification without checking with the human. Present the file for human review. Do not treat unresolved assumptions as approved requirements.
+8. Save the specification as `{feature-title}-spec.md` in the feature's agreed documentation location. Use a short, filesystem-safe feature title (lowercase kebab-case); do not overwrite an existing specification without checking with the human. Present the file for human review. Do not treat unresolved assumptions as approved requirements.
 
 ## Rules
 - The human owns business intent and final decisions about expected behavior.
