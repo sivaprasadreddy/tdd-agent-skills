@@ -15,7 +15,7 @@ Implement the approved behavior while using tests as a meaningful feedback mecha
 - Existing project architecture, conventions, and quality gates
 
 ## Workflow
-1. Inspect the relevant code, tests, architecture, and project instructions before changing anything.
+1. Inspect the approved `{feature-title}-spec.md`, relevant code, tests, architecture, and project instructions. Before starting implementation, set the specification's metadata `Status` to `IN_PROGRESS`, preserving its other metadata and content.
 2. Choose an approach based on the task:
    - **Test-first by default:** business rules, calculations, state transitions, transactions, and well-understood behavior. Add or confirm a failing test before implementation.
    - **Explore first when justified:** unfamiliar integrations, UI discovery, prototypes, and technical spikes. Explore only enough to learn; once expected behavior is agreed, add tests before considering the work complete.

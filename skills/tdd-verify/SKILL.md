@@ -23,6 +23,7 @@ Determine whether the implementation satisfies the approved behavior—not merel
 5. Run relevant tests and quality checks when possible. Record exact checks run and their outcomes.
 6. Where useful, propose adversarial cases, mutation-testing checks, or independent manual checks to assess whether the tests would catch plausible defects.
 7. Produce a concise verification report with criterion-level evidence, findings by severity, unverified areas, and a recommendation: accept, request changes, or seek a human decision.
+8. If verification succeeds—all acceptance criteria are verified, relevant tests and quality checks pass, and no blocking findings or unverified areas remain—set `Status` to `COMPLETED` in the approved `{feature-title}-spec.md` metadata, preserving its other metadata and content. Otherwise, leave the status unchanged. This status records successful verification; the human retains final acceptance authority.
 
 ## Rules
 - Treat the approved behavior specification—not the implementation or its tests—as the source of expected behavior.
